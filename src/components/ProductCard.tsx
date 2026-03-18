@@ -15,7 +15,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '255 77 86 43 49';
+    const phoneNumber = '2550564652757';
     const message = `Bonjour, je suis intéressé(e) par : ${product.name} - Prix: ${product.price}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
