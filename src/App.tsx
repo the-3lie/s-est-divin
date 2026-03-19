@@ -18,12 +18,18 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500">
 
       <header className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-blue-100 dark:border-gray-700 shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto  py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Sparkles className="w-8 h-8 text-blue-600 dark:text-blue-400 animate-pulse" />
-            <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">
-              C'est Divin
-            </h1>
+            <img src={isDark ? '/logob.png' : '/logo.png'}  className="w-20 h-50 text-blue-600 dark:text-blue-400 " />
+              <div className="flex flex-col">
+                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">
+                  C'est
+                </h1>
+
+                <h1 className="text-3xl md:text-3xl px-6 font-bold bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">
+                  Divin chop
+                </h1>
+              </div>          
           </div>
 
           <button
